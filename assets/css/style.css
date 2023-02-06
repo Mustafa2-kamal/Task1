@@ -1,0 +1,230 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+body{
+    background-color: #fafafa;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    
+    
+}
+
+.flx{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* start navbar style */
+nav{
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0px 0px 4px 0px #85858544;
+}
+
+nav a{
+    color: #000000;
+    font-weight:800;
+    font-size: 18px;
+}
+nav .container .DarkMode span{
+    font-weight: 600;
+}
+
+
+/* end navabr */
+
+/* start search */
+
+.search{
+    position: relative;
+   
+}
+.search #search_input{
+    padding: 15px 60px;
+   
+    width: 350px;
+    border: none;
+    margin-top: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px #85858544;
+    
+}
+.search i{
+    position: absolute;
+    padding-left: 25px;
+    bottom: 15px;
+    color: #858585;
+   z-index: 2;
+ 
+}
+
+/* start button filter */
+
+.container .flx .filter button{
+    padding: 15px 60px 15px 20px;
+    margin-top: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px #85858544;
+    
+}
+
+.container .flx .filter{
+    position: relative;
+}
+
+.container .flx .filter i{
+    position: absolute;
+    bottom: 18px;
+    right: 15px;
+   
+}
+
+
+/* start dropdown */ 
+.container .flx .filter .dropdown{
+background-color: #ffffff;
+position: absolute;
+width: 176px;
+margin-top: 5px;
+border-radius: 5px;
+box-shadow: 0px 0px 4px 0px #85858544;
+display: none;
+
+}
+
+
+.container .flx .filter .dropdown li a{
+    display: block;
+    padding: 5px 0px 5px 20px ;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.container .flx .filter .dropdown li a:hover{
+background-color: #fafafa
+}
+
+.container .flx .filter:hover .btn{
+ cursor: pointer;
+}
+
+.container .flx .filter:hover .dropdown { 
+    
+    display: block;
+}
+
+
+
+/* start flags */
+.flags_gallary{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.flags_gallary .container .flx2 .flags{
+
+    background-color: #ffffff;
+    border-radius: 5px;
+
+    overflow: hidden;
+    box-shadow: 0px 0px 4px 0px #85858544;
+   
+
+}
+
+.flags_gallary .container .flx2 .flags .content{
+padding: 20px 20px;
+}
+
+.flags_gallary .container .flx2 .flags div h3{
+ margin-bottom: 10px;
+}
+
+.flx2{
+    display: grid;
+    row-gap: 60px;
+    column-gap: 60px;   
+    grid-template-columns: repeat(auto-fill, minmax(235px,auto));
+}
+
+.flags_gallary .container .flx2 .flags .image {
+    
+width: 100%;
+
+  }
+
+.flags_gallary .container .flx2 .flags .image svg {
+box-shadow: 0px 0px 4px 0px #85858544;
+}
+
+
+.flags .content .name{
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+.flags .content .value{
+    font-size: 13px;
+   
+}
+
+.flags .content h4{
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 17px;
+}
+
+@media only screen and (max-width :650px)  {
+
+
+    nav{
+        padding: 30px 0;
+    }
+
+    .flx2{
+        justify-content: center;
+        grid-template-columns: 260px;
+       
+    }
+
+    .search #search_input{
+        width: 65%;
+    }
+
+    .container .flx .search{
+        width: 100%;
+    }
+
+    .flags_gallary .container .flx2 .flags{
+        height: 350px;
+    }
+}
+

@@ -1,0 +1,189 @@
+
+/* start back button */
+.back{
+    position: relative;
+}
+
+.back #b{
+    display:inline-block;
+    padding: 10px 40px 10px 60px;
+    background-color: #ffffff;
+    margin-top: 70px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); 
+    color: #000000;
+}
+
+.back i{
+    position: absolute;
+    bottom:13px;
+    padding-left: 30px;
+
+}
+
+/* start flag detail */
+
+.flag {
+
+    margin-top: 60px;
+    width: 45%;
+
+}
+
+.flag img{
+    width: 100%;
+    height: 80%;
+}
+
+.content{
+   
+    width: 47%;
+    margin-top: 90px;
+}
+
+.content h2{
+    font-weight: 800;
+}
+
+.content .left_content{
+    
+    margin-top: 20px;
+   
+}
+
+
+.content .right_content{
+  
+    margin-top: 20px;
+   
+    
+}
+
+.content .left_content .name{
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.content .right_content .name{
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.content .left_content .value{
+    
+    font-size: 15px;
+    font-family: 'Nunito Sans';
+    margin-top: 10px;
+    display: inline-block;
+
+}
+
+.content .right_content .value{
+    
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.content .down_content{
+    margin-top: 50px;
+}
+.content .down_content .border{
+    font-weight: 800;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.content .down_content .country{
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #ffffff;
+    font-size: 14px;
+   border-radius: 2px;
+    margin-right: 5px;
+    width: 70px;
+    text-align: center;
+    box-shadow: 0px 0px 4px 0px #85858575;
+}
+
+
+@media only screen and (max-width :766px)  {
+
+    .flag {
+        width: 100%;
+    
+    }
+
+
+    .content{
+   
+        width: 100%;
+        margin-top:10px;
+       
+    }
+
+    .content .left_content{
+  
+        margin-top: 15px;
+       
+        
+    }
+    .content .right_content{
+  
+        margin-top: 35px;
+       
+        
+    }
+
+    .content .down_content{
+        margin-top: 40px;
+    }
+
+    .content .down_content .border{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .content .down_content .country{
+        margin-bottom: 40px;
+        
+    }
+
+}
+
+
+ @media only screen and (max-width: 1062px) and (min-width: 767px)  {
+
+     .flag {
+
+        width: 80%;
+    
+    }
+
+    .content{
+   
+        width: 100%;
+        margin-top:40px;  
+       
+    }
+
+
+
+    .content .down_content .border{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+
+    .content .down_content .country{
+        margin-bottom: 40px;
+       
+    } 
+
+} 
+    
+
