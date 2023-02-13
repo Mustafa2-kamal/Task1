@@ -1,61 +1,77 @@
 
 /* start back button */
+
 .back{
-    position: relative;
+    display:flex;
+    margin-top: 70px;
 }
 
 .back #b{
-    display:inline-block;
-    padding: 10px 40px 10px 60px;
+    
+    padding: 10px 35px 10px 35px;
     background-color: #ffffff;
-    margin-top: 70px;
+    
     border-radius: 5px;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); 
     color: #000000;
+    
 }
 
 .back i{
-    position: absolute;
-    bottom:13px;
-    padding-left: 30px;
-
+    
+margin-right: 5px;
 }
 
 /* start flag detail */
 
-.flag {
 
-    margin-top: 60px;
-    width: 45%;
 
+.flag_detail{
+    margin-top: 70px;
+    margin-bottom: 70px;
+ 
 }
+
+
+.grid_display{
+    display: grid;
+    column-gap: 95px;   
+    grid-template-columns: repeat(auto-fill, minmax(460px,auto));
+    align-items: center;
+}
+
+
+.grid_content{
+    display: grid;
+    column-gap: 99px;   
+    grid-template-columns: repeat(auto-fill, minmax(230px,auto));
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
 
 .flag img{
     width: 100%;
-    height: 80%;
+    object-fit: contain;
+    display: block;
 }
 
 .content{
-   
-    width: 47%;
-    margin-top: 90px;
+ 
+    align-items: center;
+    font-size: 17px;
+
 }
 
 .content h2{
     font-weight: 800;
+    font-size: 17px;
 }
-
-.content .left_content{
-    
-    margin-top: 20px;
-   
-}
+ 
 
 
 .content .right_content{
-  
-    margin-top: 20px;
-   
+     margin-left: 9px; 
     
 }
 
@@ -89,9 +105,7 @@
     display: inline-block;
 }
 
-.content .down_content{
-    margin-top: 50px;
-}
+
 .content .down_content .border{
     font-weight: 800;
     font-size: 14px;
@@ -111,78 +125,105 @@
 }
 
 
-@media only screen and (max-width :766px)  {
+@media only screen and (max-width :683px)  {
 
-    .flag {
-        width: 100%;
-    
+
+    .grid_display{
+        display: grid;
+        column-gap: 95px;   
+        grid-template-columns: repeat(auto-fill, minmax(260px,auto));
+        align-items: center;
     }
 
 
     .content{
-   
-        width: 100%;
-        margin-top:10px;
+        margin-top:50px;
        
     }
 
-    .content .left_content{
-  
-        margin-top: 15px;
-       
-        
-    }
     .content .right_content{
   
-        margin-top: 35px;
-       
+       margin-top: 35px;
+       margin-left: 0px;
         
+    } 
+
+    .grid_content{
+        margin-bottom: 40px;
+        grid-template-columns: repeat(auto-fill, minmax(260px,auto));
     }
 
-    .content .down_content{
-        margin-top: 40px;
-    }
 
     .content .down_content .border{
         display: block;
         margin-bottom: 20px;
-    }
-
-    .content .down_content .country{
-        margin-bottom: 40px;
-        
     }
 
 }
 
 
- @media only screen and (max-width: 1062px) and (min-width: 767px)  {
+ @media only screen and (max-width: 1348px) and (min-width: 684px)  {
 
-     .flag {
-
-        width: 80%;
-    
-    }
 
     .content{
-   
-        width: 100%;
-        margin-top:40px;  
-       
+        margin-top:50px;  
+       width: 100%;
     }
 
+    .grid_display{
+        display: grid;
+        column-gap: 95px;   
+        grid-template-columns: repeat(auto-fill, minmax(650px,auto));
+        align-items: center;
+    }
 
+    .grid_content{
+        margin-bottom: 40px;
+        grid-template-columns: repeat(auto-fill, minmax(270px,auto));
+        /* column-gap: 90px;   */
+        width: 100%;
+    }
+
+  
 
     .content .down_content .border{
         display: block;
         margin-bottom: 20px;
     }
 
+    .content h2{
+        font-size: 30px;
+    }
 
+    .content .left_content .name{
+        font-size: 18px;
+    }
+    
+    .content .right_content .name{
+        font-size: 18px;
+    }
+    
+    .content .left_content .value{
+        
+        font-size: 16px;
+    
+    }
+    
+    .content .right_content .value{
+        
+        font-size: 16px;
+    }
+
+
+    .content .down_content .border{
+        font-size: 17px;
+    }
+    
     .content .down_content .country{
-        margin-bottom: 40px;
-       
-    } 
+        font-size: 16px;
+        width: 80px;
+
+    }
 
 } 
     
